@@ -1,3 +1,5 @@
+/*Barra de navegacion y header para todas las paginas*/
+
 .navbar {
     background-image: url(/assets/img/header.jpg);
     background-size: cover;
@@ -20,4 +22,109 @@
 
 .navbar-nav {
     background-color: rgba(240, 248, 255, 0.74);
+    padding: 10px;
+    margin-left: 70%;
+}
+
+/*Pie de pagina y footer para todas las paginas*/
+
+.pie-de-pagina {
+    display: flex;
+    background-image: url(/assets/img/header.jpg);
+    height: 15vh;
+    background-size: cover;
+    padding: 10px;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.volver-arriba a {
+    color: hsl(0, 5%, 37%);
+    text-decoration: none;
+    background-color: rgba(240, 248, 255, 0.74);
+}
+
+.footer {
+    text-align: end;
+    color: hwb(15 9% 90%);
+    font-size: 20%;
+}
+
+/*Contenido de pagina de inicio*/
+
+.fondo--inicio {
+    background-image: url(/assets/img/cancha_tenis_doble_gradas_vertical.jpeg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+        "fixture jugadores"
+        "sedes ganadores"
+        "store contacto";
+}
+
+.fondo--inicio h2 {
+    font-size: 25px;
+    padding: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fixture--inicio {
+    grid-area: fixture;
+    background-color: hsla(60, 56%, 91%, 0.432);
+    text-align: center;
+    border: 2px solid lab(48.49% 17.43 28.3);
+}
+
+.jugadores--inicio {
+    grid-area: jugadores;
+    background-color: hsla(60, 56%, 91%, 0.432);
+    text-align: center;
+    border: 2px solid lab(48.49% 17.43 28.3);
+}
+
+.sedes--inicio {
+    grid-area: sedes;
+    background-color: hsla(60, 56%, 91%, 0.432);
+    text-align: center;
+    border: 2px solid lab(48.49% 17.43 28.3);
+}
+
+.ganadores--inicio {
+    grid-area: ganadores;
+    background-color: hsla(60, 56%, 91%, 0.432);
+    text-align: center;
+    border: 2px solid lab(48.49% 17.43 28.3);
+}
+
+.store--inicio {
+    grid-area: store;
+    background-color: hsla(60, 56%, 91%, 0.432);
+    text-align: center;
+    border: 2px solid lab(48.49% 17.43 28.3);
+}
+
+.contacto--inicio {
+    grid-area: contacto;
+    background-color: hsla(60, 56%, 91%, 0.432);
+    text-align: center;
+    border: 2px solid lab(48.49% 17.43 28.3);
+}
+
+/*Contenido de pagina de inicio movil*/
+
+@media (max-width: 480px) {
+    .fondo--inicio {
+        background-image: url(/assets/img/cancha_tenis_doble_gradas_horizontal.jpeg);
+        background-size: cover;
+    }
+
+    .fondo--inicio h2 {
+        font-size: 20px;
+    }
 }

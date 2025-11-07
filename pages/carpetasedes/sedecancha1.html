@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour de Tenis</title>
+    <title>Proyecto-Coderhouse</title>
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body class="fondo">
-    <header class="fondoenlaces" id="header">
-        <nav>
-            <ul>       
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="../fixture.html">Fixture</a></li>
-                <li><a href="../jugadores.html">Jugadores</a></li>
-                <li><a href="../sedes.html">Sedes</a></li>  
-                <li><a href="../store.html">Store</a></li>
-                <li><a href="../ganadores.html">Ganadores</a></li>
-                <li><a href="../contacto.html">Contacto</a></li>
-            </ul> 
+    <!-- Header y barra de navegacion-->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/assets/img/coderhousetenistour.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fixture.html">Fixture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../jugadores.html">Jugadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sedes.html">Sedes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ganadores.html">Ganadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../store.html">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
     <main>
 
-    <section>
-        <h1 class="encabezado">Sedes</h1>
-    </section>
-    <section>
-        <h2>Sede "cancha1"</h2>
-        <a href="/pages/carpetasedes/sedecancha1.html"><img src="/assets/img/cancha1.jpeg" width="650" alt="cancha1"></a>
-    </section>
-    <section class="sedes">
-        <ul>
-            <li>Direccion: kakakasalsklaksl</li>
-            <li>Telefono: 254525565545555</li>
-            <li>Profe: Piripipi</li>
-            <li>Datos interesantes: llalalalallalaaa</li>
-        </ul>
-    </section>
+        <section>
+            <h1 class="encabezado">Sedes</h1>
+        </section>
+        <section>
+            <h2>Sede "cancha1"</h2>
+            <a href="/pages/carpetasedes/sedecancha1.html"><img src="/assets/img/cancha1.jpeg" width="650"
+                    alt="cancha1"></a>
+        </section>
+        <section class="sedes">
+            <ul>
+                <li>Direccion: kakakasalsklaksl</li>
+                <li>Telefono: 254525565545555</li>
+                <li>Profe: Piripipi</li>
+                <li>Datos interesantes: llalalalallalaaa</li>
+            </ul>
+        </section>
 
 
     </main>
+    <!--Pie de pagina hecho con Flexbox-->
+    <section class="pie-de-pagina">
+        <section class="volver-arriba">
+            <a href="#header">Volver arriba</a>
+        </section>
 
-    <section class="subir">
-        <a href="#header">Volver arriba</a>
+        <footer class="footer">
+            <h3>Version 1.0.0 2025</h3>
+        </footer>
     </section>
-    
-    <footer class="fondofooter">
-
-        <h3>Version 1.0.0.0.0.0.0.0.0 2025</h3>
-
-    </footer>
-    
+    <!-- BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
