@@ -17,7 +17,7 @@
 <body class="fondo">
     <!-- Header y barra de navegacion-->
     <header class="header" id="header">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg z-3"> <!-- z-3 es para que este por encima de todo-->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="/assets/img/coderhousetenistour.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,69 +54,75 @@
         </nav>
     </header>
     <main>
-    <section>
-        <h2>
-            <label for="categoria">Categoria:</label>
-            <select name="" id="">
-            <option value="">2da</option>
-            <option value="">3era</option>
-            <option value="">4ta</option>
-            <option value="">5ta</option>
-            <option value="">6ta</option>
-            <option value="">Doble Masc.</option>
-            <option value="">Doble Fem.</option>
-            <option value="">Doble Mix.</option>
-            <option value="">Ranking</option>
-            </select>
-            <label for="nombre">Buscar por nombre</label>
-            <input type="search" name="nombre" id="nombre">
-        </h2>
-    </section>
-    <section class="comentario">
-        *****Se buscaria por categoria (te traeria todos de esa categoria) y/o tambien por nombre algo como el ejemplo de abajo*****
-    </section>
-    <section class="jugadores">
-        <img src="../assets/img/roger.jpeg" width="150" alt="Roger">
-            <ul>       
-                <li>Nombre: Roger</li>
-                <li>Edad: 23</li>
-                <li>Torneos Ganados: 2</li>
-                <li>Mejor Etapa Alcanzada: tal</li>
-                <li>Contacto: 8282929@uuded</li>
-            </ul> 
-    </section>
-
-    <section class="espacio">
-        <br>
-    </section>
-
-    <section class="jugadores">
-        
-        <img src="../assets/img/rafa.jpeg" width="150" alt="Rafa">
-            <ul>       
-                <li>Nombre: Rafa</li>
-                <li>Edad: 22</li>
-                <li>Torneos Ganados: 2</li>
-                <li>Mejor Etapa Alcanzada: tal</li>
-                <li>Contacto: 8282929@uuded</li>
-            </ul> 
-    </section>
-    
-    <section class="espacio">
-        <br>
-    </section>
-    
-    <section class="jugadores">
-        <img src="../assets/img/nole.jpeg" width="150" alt="Nole">
-            <ul>       
-                <li>Nombre: Nole</li>
-                <li>Edad: 21</li>
-                <li>Torneos Ganados: 2</li>
-                <li>Mejor Etapa Alcanzada: tal</li>
-                <li>Contacto: 8282929@uuded</li>
-            </ul> 
-    </section>
-
+        <div class="fondo--jugadores"> 
+            <section class="container" id="fotos--jugadores">
+                <div class="barra">   <!-- Boton para elegir la categoria-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Elige una categoria
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">2da</a></li>
+                            <li><a class="dropdown-item" href="#">3era</a></li>
+                            <li><a class="dropdown-item" href="#">4ta</a></li>
+                            <li><a class="dropdown-item" href="#">5ta</a></li>
+                            <li><a class="dropdown-item" href="#">6ta</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="comentario">
+                    *****Se buscaria por categoria (te traeria todos de esa categoria)*****
+                </section>  <!-- Seccion para visualizar lo que trae la busqueda-->
+                <div class="row" id="tarjetas--jugadores">
+                    <div class="col-12 col-md-6 col-lg-4  d-flex justify-content-center p-1 ">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/img/roger.jpeg" class="card-img-top" alt="Roger">
+                            <div class="card-body">
+                                <h5 class="card-title">Categoria: 2da</h5>
+                                <ul>
+                                    <li>Nombre: Roger</li>
+                                    <li>Edad: 23</li>
+                                    <li>Torneos Ganados: 2</li>
+                                    <li>Mejor Etapa Alcanzada: tal</li>
+                                    <li>Contacto: 8282929@uuded</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center p-1">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/img/rafa.jpeg" class="card-img-top" alt="Rafa">
+                            <div class="card-body">
+                                <h5 class="card-title">Categoria: 2da</h5>
+                                <ul>
+                                    <li>Nombre: Rafa</li>
+                                    <li>Edad: 23</li>
+                                    <li>Torneos Ganados: 2</li>
+                                    <li>Mejor Etapa Alcanzada: tal</li>
+                                    <li>Contacto: 8282929@uuded</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4  d-flex justify-content-center p-1">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/img/nole.jpeg" class="card-img-top" alt="Nole">
+                            <div class="card-body">
+                                <h5 class="card-title">Categoria: 2da</h5>
+                                <ul>
+                                    <li>Nombre: Nole</li>
+                                    <li>Edad: 23</li>
+                                    <li>Torneos Ganados: 2</li>
+                                    <li>Mejor Etapa Alcanzada: tal</li>
+                                    <li>Contacto: 8282929@uuded</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <!--Pie de pagina hecho con Flexbox-->
     <section class="pie-de-pagina">

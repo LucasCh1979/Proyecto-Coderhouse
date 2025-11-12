@@ -1,4 +1,7 @@
 /*Barra de navegacion y header para todas las paginas*/
+.header {
+    padding: 10px;
+}
 
 .navbar {
     background-image: url(/assets/img/header.jpg);
@@ -10,10 +13,12 @@
 
 .nav-link {
     background-color: rgba(240, 248, 255, 0.74);
+    border-radius: 4px;
 }
 
 .navbar-toggler-icon {
     background-color: rgba(240, 248, 255, 0.74);
+    border-radius: 4px;
 }
 
 .navbar-brand img {
@@ -36,12 +41,14 @@
     padding: 10px;
     gap: 30px;
     justify-content: space-between;
+    margin: 10px 10px 10px 10px;
 }
 
 .volver-arriba a {
     color: hsl(0, 5%, 37%);
     text-decoration: none;
     background-color: rgba(240, 248, 255, 0.74);
+    border-radius: 4px;
 }
 
 .footer {
@@ -50,7 +57,7 @@
     font-size: 20%;
 }
 
-/*Contenido de pagina de inicio*/
+/*Contenido de pagina de Inicio*/
 
 .fondo--inicio {
     background-image: url(/assets/img/cancha_tenis_doble_gradas_vertical.jpeg);
@@ -79,6 +86,7 @@ a {
     background-color: hsla(60, 56%, 91%, 0.432);
     text-align: center;
     border: 2px solid lab(48.49% 17.43 28.3);
+    border-radius: 10px;
 }
 
 .jugadores--inicio {
@@ -86,6 +94,7 @@ a {
     background-color: hsla(60, 56%, 91%, 0.432);
     text-align: center;
     border: 2px solid lab(48.49% 17.43 28.3);
+    border-radius: 10px;
 }
 
 .sedes--inicio {
@@ -93,6 +102,7 @@ a {
     background-color: hsla(60, 56%, 91%, 0.432);
     text-align: center;
     border: 2px solid lab(48.49% 17.43 28.3);
+    border-radius: 10px;
 }
 
 .ganadores--inicio {
@@ -100,6 +110,7 @@ a {
     background-color: hsla(60, 56%, 91%, 0.432);
     text-align: center;
     border: 2px solid lab(48.49% 17.43 28.3);
+    border-radius: 10px;
 }
 
 .store--inicio {
@@ -107,6 +118,7 @@ a {
     background-color: hsla(60, 56%, 91%, 0.432);
     text-align: center;
     border: 2px solid lab(48.49% 17.43 28.3);
+    border-radius: 10px;
 }
 
 .contacto--inicio {
@@ -114,11 +126,12 @@ a {
     background-color: hsla(60, 56%, 91%, 0.432);
     text-align: center;
     border: 2px solid lab(48.49% 17.43 28.3);
+    border-radius: 10px;
 }
 
-/*Contenido de pagina de inicio movil*/
+/*Contenido de pagina de Inicio Movil*/
 
-@media (max-width: 480px) {
+@media (max-width: 991px) {
     .fondo--inicio {
         background-image: url(/assets/img/cancha_tenis_doble_gradas_horizontal.jpeg);
         background-size: cover;
@@ -126,5 +139,298 @@ a {
 
     .fondo--inicio h2 {
         font-size: 20px;
+        margin-top: 30px;
     }
+}
+
+/*Contenido de la pagina de Fixture*/
+
+.row>div>a>img {
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+}
+
+#titulo--fixture {
+    text-align: center;
+}
+
+/* Hover en la pagina de fixture, son los nombres de los torneos en vistas que no sean movil*/
+#fixture--grilla--2da {
+    position: relative;
+}
+
+#fixture--grilla--2da p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--2da:hover p {
+    opacity: 1;
+}
+
+#fixture--grilla--3ra {
+    position: relative;
+}
+
+#fixture--grilla--3ra p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--3ra:hover p {
+    opacity: 1;
+}
+
+#fixture--grilla--4ta {
+    position: relative;
+}
+
+#fixture--grilla--4ta p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--4ta:hover p {
+    opacity: 1;
+}
+
+#fixture--grilla--5ta {
+    position: relative;
+}
+
+#fixture--grilla--5ta p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--5ta:hover p {
+    opacity: 1;
+}
+
+#fixture--grilla--6ta {
+    position: relative;
+}
+
+#fixture--grilla--6ta p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--6ta:hover p {
+    opacity: 1;
+}
+
+#fixture--grilla--doblesmasc {
+    position: relative;
+}
+
+#fixture--grilla--doblesmasc p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--doblesmasc:hover p {
+    opacity: 1;
+}
+
+#fixture--grilla--doblesfem {
+    position: relative;
+}
+
+#fixture--grilla--doblesfem p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--doblesfem:hover p {
+    opacity: 1;
+}
+
+#fixture--grilla--doblesmix {
+    position: relative;
+}
+
+#fixture--grilla--doblesmix p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--doblesmix:hover p {
+    opacity: 1;
+}
+
+#fixture--grilla--americano {
+    position: relative;
+}
+
+#fixture--grilla--americano p {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#fixture--grilla--americano:hover p {
+    opacity: 1;
+}
+
+/*Nombres de los torneos en vistas movil*/
+
+@media (max-width: 991px) {
+    #fixture--grilla--2da p {
+        opacity: 1;
+    }
+
+    #fixture--grilla--3ra p {
+        opacity: 1;
+    }
+
+    #fixture--grilla--4ta p {
+        opacity: 1;
+    }
+
+    #fixture--grilla--5ta p {
+        opacity: 1;
+    }
+
+    #fixture--grilla--6ta p {
+        opacity: 1;
+    }
+
+    #fixture--grilla--doblesmasc p {
+        opacity: 1;
+    }
+
+    #fixture--grilla--doblesfem p {
+        opacity: 1;
+    }
+
+    #fixture--grilla--doblesmix p {
+        opacity: 1;
+    }
+
+    #fixture--grilla--americano p {
+        opacity: 1;
+    }
+}
+
+/*Contenido de la pagina de Jugadores */
+
+.fondo--jugadores {
+    padding: 0px 10px;
+}
+
+/*Para que la pagina de Jugadores se vea del mismo ancho en desktop que las demas paginas */
+
+@media (min-width: 991px) {
+    .fondo--jugadores {
+        padding: 0px 20px;
+    }
+}
+
+.card {
+    padding: 15px;
+}
+
+#fotos--jugadores img {
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+#fotos--jugadores {
+    background-image: url(/assets/img/Imagen\ pegada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+}
+
+.comentario {
+    background-color: black;
+    color: azure;
+    display: flex;
+    justify-content: center;
+}
+
+/*Contenido de la pagina de Sedes */
+
+.carousel-inner>div>img {
+    width: 1fr;
+    height: 40vh;
+}
+
+#tarjetas img {
+    width: 266px;
+    height: 150px;
+}
+
+#carrusel {
+    padding-bottom: 10px;
+}
+
+/*Contenido de la pagina de Store */
+
+#store--imagenes img {
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid lab(48.49% 17.43 28.3);
+    border-radius: 10px;
+}
+
+/*Contenido de la pagina de Contacto */
+
+#contacto--fondo {
+    background-image: url(/assets/img/version-programador.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    height: 80vh;
+    width: 100%;
+}
+
+.contacto--parrafo {
+    color: black;
+    background-color: #d2691e3b;
+}
+
+.contacto--llama {
+    color: black;
+    background-color: #d2691e3b;
+}
+
+.contacto--datos {
+    color: black;
+    background-color: #d2691e3b;
 }

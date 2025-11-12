@@ -17,7 +17,7 @@
 <body class="fondo">
     <!-- Header y barra de navegacion-->
     <header class="header" id="header">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg z-3"> <!-- z-3 es para que este por encima de todo-->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="/assets/img/coderhousetenistour.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,45 +53,62 @@
             </div>
         </nav>
     </header>
-    <section>
-        <h2>
-            <label for="torneo">Torneo:</label>
-            <select name="" id="">
-                <option value="">2da</option>
-                <option value="">3era</option>
-                <option value="">4ta</option>
-                <option value="">5ta</option>
-                <option value="">6ta</option>
-                <option value="">Doble Masc.</option>
-                <option value="">Doble Fem.</option>
-                <option value="">Doble Mix.</option>
-                <option value="">Ranking</option>
-            </select>
-        </h2>
-    </section>
-    <section class="comentario">
-        *****Al cambiar en el menu desplegable cambiarian los ganadores*****
-    </section>
-    <br>
     <main>
-        <section>
-            <h2>Campeon</h2>
-            <img src="../assets/img/roger.jpeg" width="150" alt="Roger">
-            <ul>
-                <li>Nombre: Roger</li>
-                <li>Edad: 23</li>
-                <li>Fecha de torneo ganado: DD/MM/AAAA</li>
-                <li>Sede: xxxxx</li>
-            </ul>
-            <h2>Finalista</h2>
-            <img src="../assets/img/rafa.jpeg" width="150" alt="Rafa">
-            <ul>
-                <li>Nombre: Rafa</li>
-                <li>Edad: 22</li>
-                <li>Fecha de torneo ganado: DD/MM/AAAA</li>
-                <li>Sede: xxxxx</li>
-            </ul>
-        </section>
+        <div class="fondo--jugadores">
+            <section class="container" id="fotos--jugadores">
+                <div class="barra">
+                    <div class="dropdown">   <!--boton para elegir torneo para que traiga a los jugadores que fueron finalistas-->
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Elige un torneo
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Apertura</a></li>
+                            <li><a class="dropdown-item" href="#">Primavera</a></li>
+                            <li><a class="dropdown-item" href="#">Los Aroldos</a></li>
+                            <li><a class="dropdown-item" href="#">Pico y Pala</a></li>
+                            <li><a class="dropdown-item" href="#">Dobles de Queso</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="comentario">
+                    *****Se buscaria por torneo y te traeria 2 (el ganador) y el finalista si fue singles y 4 (2 y 2) si
+                    fue dobles.*****
+                </section>      <!-- muestra los jugadores finalistas del torneo seleccionado-->
+                <div class="row" id="tarjetas--jugadores">
+                    <div class="col-12 col-md-6 col-lg-4  d-flex justify-content-center p-1">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/img/roger.jpeg" class="card-img-top" alt="Roger">
+                            <div class="card-body">
+                                <h5 class="card-title">Ganador</h5>
+                                <ul>
+                                    <li>Nombre: Roger</li>
+                                    <li>Edad: 23</li>
+                                    <li>Torneos Ganados: 2</li>
+                                    <li>Mejor Etapa Alcanzada: tal</li>
+                                    <li>Contacto: 8282929@uuded</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4  d-flex justify-content-center p-1">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../assets/img/rafa.jpeg" class="card-img-top" alt="Rafa">
+                            <div class="card-body">
+                                <h5 class="card-title">Finalista</h5>
+                                <ul>
+                                    <li>Nombre: Rafa</li>
+                                    <li>Edad: 23</li>
+                                    <li>Torneos Ganados: 2</li>
+                                    <li>Mejor Etapa Alcanzada: tal</li>
+                                    <li>Contacto: 8282929@uuded</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <!--Pie de pagina hecho con Flexbox-->
     <section class="pie-de-pagina">

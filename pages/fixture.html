@@ -17,7 +17,7 @@
 <body class="fondo">
     <!-- Header y barra de navegacion-->
     <header class="header" id="header">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg z-3"> <!-- z-3 es para que el desplegable quede por encima de todo -->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="/assets/img/coderhousetenistour.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,45 +54,94 @@
         </nav>
     </header>
     <main>
-        <section class="fixture--fixture">
-            <div>
-                <h1>Fixtures</h1>
-            </div>
-            <div>
-                <a href="./carpetafixture/torneo2da.html">
-                    <img src="/assets/img/raqueta-oro.png" alt="raqueta-oro"></a>
-                <p>Torneo de 2da</p>
-            </div>
-            <div>
-                <a href="./carpetafixture/torneo3era.html"><img src="/assets/img/raqueta-plata.png"
-                        alt="raqueta-plata"></a>
-            </div>
-            <div>
-                <a href="./carpetafixture/torneo4ta.html"><img src="/assets/img/raqueta-bronce.png"
-                        alt="raqueta-bronce"></a>
-            </div>
-            <div>
-                <a href="./carpetafixture/torneo5ta.html"><img src="/assets/img/raqueta-cobre.png"
-                        alt="raqueta-cobre"></a>
-            </div>
-            <div>
-                <a href="./carpetafixture/torneo6ta.html"><img src="/assets/img/raqueta-madera.png"
-                        alt="raqueta-madera"></a>
-            </div>
-            <div>
-                <a href="./carpetafixture/doblesmasc.html"><img src="/assets/img/raquetas-dobles-masc.png"
-                        alt="raquetas-dobles-masc"></a>
-            </div>
-            <div>
-                <a href="./carpetafixture/doblesfem.html"><img src="/assets/img/raquetas-dobles-fem.png"
-                        alt="raquetas-dobles-fem"></a>
-            </div>
-            <div>
-                <a href="./carpetafixture/doblesmix.html"><img src="/assets/img/raquetas-dobles-mixto.png"
-                        alt="raquetas-dobles-mixto"></a>
-            </div>
-            <div class="fixture--item">
-                <h2>fixture item</h2>
+        <div id="titulo--fixture">
+            <h1>Fixtures (Hace click en la imagen)</h1>
+        </div>
+        <section class="fixture--fixture"> <!-- Contenido de los torneos -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--2da">
+                        <a href="./carpetafixture/torneo2da.html">
+                            <figure class="figure">
+                                <img src="/assets/img/raqueta-oro.png" class="figure-img img-fluid rounded"
+                                    alt="raqueta-oro">
+                            </figure>
+                        </a>
+                        <p>Torneo de 2da</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--3ra">
+                        <a href="./carpetafixture/torneo3era.html">
+                            <figure class="figure">
+                                <img src="/assets/img/raqueta-plata.png" class="figure-img img-fluid rounded"
+                                    alt="raqueta-plata">
+                            </figure>
+                        </a>
+                        <p>Torneo de 3ra</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--4ta">
+                        <a href="./carpetafixture/torneo4ta.html">
+                            <figure class="figure">
+                                <img src="/assets/img/raqueta-bronce.png" class="figure-img img-fluid rounded"
+                                    alt="raqueta-bronce">
+                            </figure>
+                        </a>
+                        <p>Torneo de 4ta</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--5ta">
+                        <a href="./carpetafixture/torneo5ta.html">
+                            <figure class="figure">
+                                <img src="/assets/img/raqueta-cobre.png" class="figure-img img-fluid rounded"
+                                    alt="raqueta-cobre">
+                            </figure>
+                        </a>
+                        <p>Torneo de 5ta</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--6ta">
+                        <a href="./carpetafixture/torneo6ta.html">
+                            <figure class="figure">
+                                <img src="/assets/img/raqueta-madera.png" class="figure-img img-fluid rounded"
+                                    alt="raqueta-madera">
+                            </figure>
+                        </a>
+                        <p>Torneo de 6ta</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--doblesmasc">
+                        <a href="./carpetafixture/doblesmasc.html">
+                            <figure class="figure">
+                                <img src="/assets/img/raquetas-dobles-masc.png" class="figure-img img-fluid rounded"
+                                    alt="raquetas-dobles-masc">
+                            </figure>
+                        </a>
+                        <p>Torneo de Dobles Masculino</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--doblesfem">
+                        <a href="./carpetafixture/doblesfem.html">
+                            <figure class="figure">
+                                <img src="/assets/img/raquetas-dobles-fem.png" class="figure-img img-fluid rounded"
+                                    alt="raquetas-dobles-fem">
+                            </figure>
+                        </a>
+                        <p>Torneo de Dobles Femenino</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--doblesmix">
+                        <a href="./carpetafixture/doblesmix.html">
+                            <figure class="figure">
+                                <img src="/assets/img/Raquetas-Dobles-Mixto.png" class="figure-img img-fluid rounded"
+                                    alt="raquetas-dobles-mixto">
+                            </figure>
+                        </a>
+                        <p>Torneo de Dobles Mixto</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" id="fixture--grilla--americano">
+                        <a href="./carpetafixture/torneoamer.html">
+                            <figure class="figure">
+                                <img src="/assets/img/Raquetas-Dobles-Mixto.png" class="figure-img img-fluid rounded"
+                                    alt="torneo americano">
+                            </figure>
+                        </a>
+                        <p>Torneo Americano</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
