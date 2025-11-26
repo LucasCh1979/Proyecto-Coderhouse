@@ -1,0 +1,56 @@
+/*Contenido de la pagina de Jugadores */
+@use "../utilities/extend";
+
+
+main {
+    .membrete--jugadores {
+        @extend %membretes;
+    }
+    .membrete--ganadores {
+        @extend %membretes;
+    }
+
+    .fondo--jugadores {
+        padding: 0px 10px;
+
+
+
+            img {
+                height: 250px;
+                width: 250px;
+                border-radius: 5px;
+                margin: 19px;
+            }
+
+            .barra {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+
+            .comentario {
+                background-color: black;
+                color: azure;
+                display: flex;
+                justify-content: center;
+            }
+
+            .tarjetas--jugadores {
+                .card {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+
+
+
+/*Para que la pagina de Jugadores se vea del mismo ancho en desktop que las demas paginas */
+
+@media (min-width: 991px) {
+    main {
+        .fondo--jugadores {
+            padding: 0px 20px;
+        }
+    }
+}

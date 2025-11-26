@@ -1,0 +1,81 @@
+%parrafo {
+    position: absolute;
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
+    bottom: 10px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+%parrafo--store {
+    position: absolute;
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
+    bottom: 60px;
+    padding: 10px;
+    font-size: 50px;
+    opacity: 0;
+    background-color: lab(63.63% 34.28 69.09 / 0.13);
+    transform: rotate(-45deg);
+    border-radius: 20px;
+}
+
+%back-inicio-botones {
+    background-color: hsla(60, 56%, 91%, 0.432);
+    text-align: center;
+    border: 2px solid lab(48.49% 17.43 28.3);
+    border-radius: 10px;
+
+}
+
+%membretes {
+    text-align: center;
+
+    h1 {
+        font-family: "Bungee Spice", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10vw;
+
+    }
+}
+
+%h2--inicio {
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+
+%hover--fixture {
+    position: relative;
+
+    figure {
+        overflow: hidden;
+        border-radius: 20px
+    }
+
+    p {
+        @extend %parrafo;
+    }
+
+    img {
+        transition: transform .8s;
+    }
+
+    &:hover {
+        p {
+            opacity: 1;
+        }
+
+        img {
+            transform: scale(1.15);
+        }
+    }
+}
+

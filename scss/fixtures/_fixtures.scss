@@ -1,0 +1,50 @@
+/*Contenido de la pagina de Fixture*/
+@use "../utilities/extend";
+
+main {
+    .membrete--fixture {
+        @extend %membretes
+    }
+
+    section {
+        .row {
+            #fixture--grilla--2da {
+                @extend %hover--fixture;
+            }
+
+            #fixture--grilla--3ra {
+                @extend %hover--fixture;
+            }
+            
+
+            #fixture--grilla--4ta {
+                @extend %hover--fixture;
+            }
+            
+
+            #fixture--grilla--5ta {
+                @extend %hover--fixture;
+            }
+
+            #fixture--grilla--6ta {
+                @extend %hover--fixture;
+            }
+
+            #fixture--grilla--doblesmasc {
+                @extend %hover--fixture;
+            }
+
+            #fixture--grilla--doblesfem {
+                @extend %hover--fixture;
+            }
+
+            #fixture--grilla--doblesmix {
+                @extend %hover--fixture;
+            }
+
+            #fixture--grilla--americano {
+                @extend %hover--fixture;
+            }
+        }
+    }
+}

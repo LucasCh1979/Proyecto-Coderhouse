@@ -1,0 +1,82 @@
+/*Contenido de pagina de Inicio*/
+
+@use "../utilities/extend";
+
+main {
+    .membrete--inicio {
+        @extend %membretes;
+    }
+    .fondo--inicio {
+        background-image: url(/assets/img/cancha_tenis_doble_gradas_vertical.jpeg);
+        background-size: cover;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas:
+            "fixture"
+            "jugadores"
+            "sedes"
+            "ganadores"
+            "store"
+            "contacto";
+
+        h2 {
+            @extend %h2--inicio;
+            
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .fixture--inicio {
+            grid-area: fixture;
+            @extend %back-inicio-botones;
+        }
+
+        .jugadores--inicio {
+            grid-area: jugadores;
+            @extend %back-inicio-botones;
+        }
+
+        .sedes--inicio {
+            grid-area: sedes;
+            @extend %back-inicio-botones;
+        }
+
+        .ganadores--inicio {
+            grid-area: ganadores;
+            @extend %back-inicio-botones;
+        }
+
+        .store--inicio {
+            grid-area: store;
+            @extend %back-inicio-botones;
+        }
+
+        .contacto--inicio {
+            grid-area: contacto;
+            @extend %back-inicio-botones;
+        }
+    }
+}
+
+
+
+/*Contenido de pagina de Inicio Movil*/
+
+@media (max-width: 991px) {
+    main {
+        .fondo--inicio {
+            background-image: url(/assets/img/cancha_tenis_doble_gradas_horizontal.jpeg);
+            background-size: cover;
+            border-radius: 20px;
+
+            h2 {
+                font-size: 40px;
+                margin-top: 60px;
+            }
+        }
+    }
+}

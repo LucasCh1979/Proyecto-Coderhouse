@@ -1,0 +1,37 @@
+/*Contenido de la pagina de Store */
+
+@use "../utilities/extend";
+
+main {
+    .membrete--store {
+        @extend %membretes;
+    }
+
+    .comentario {
+        color: white;
+        background-color: black;
+    }
+
+    #store--imagenes {
+        div {
+            position: relative;
+            img {
+                height: 250px;
+                width: 250px;
+                padding: 10px;
+                border: 2px solid lab(48.49% 17.43 28.3);
+                border-radius: 10px;
+            }
+            p {
+                @extend %parrafo--store;
+            }
+            &:hover {
+                cursor: pointer;
+                p {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+}

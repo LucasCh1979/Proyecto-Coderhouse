@@ -1,0 +1,33 @@
+/*Contenido de la pagina de Sedes */
+
+@use "../utilities/extend";
+
+main {
+    .membrete--sedes {
+        @extend %membretes;
+    }
+    .carousel-inner {
+        div {
+            img {
+                width: 1fr;
+                height: 40vh;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    #tarjetas {
+        .card {
+            a {
+                margin: 10px;
+
+                img {
+                    width: 266px;
+                    height: 150px;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+    }
+}

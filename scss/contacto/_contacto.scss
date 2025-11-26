@@ -1,0 +1,218 @@
+/*Contenido de la pagina de Contacto */
+@use"../utilities/extend";
+
+
+main {
+    #contacto--fondo {
+        .membrete--contacto {
+            @extend %membretes;
+        }
+
+        section {
+            .container {
+                .row {
+                    div {
+                        figure {
+                            img {
+                                width: 100%;
+                                border-radius: 20px;
+                                padding: 12px;
+                            }
+                        }
+                    }
+                }
+
+                #resume-container {
+                    background: rgba(255, 255, 255, 1);
+                    color: black !important;
+                    opacity: 1 !important;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-radius: 7px;
+
+                    hr {
+                        border-bottom: 2px solid black;
+                    }
+
+                    header {
+                        background: #4caf7c;
+                        padding: 40px 0 20px;
+                        position: relative;
+                        z-index: 1;
+                        border-top-left-radius: 7px;
+                        border-top-right-radius: 7px;
+
+                        .resume-portfolio-pic {
+                            border-radius: 50%;
+                            height: 200px;
+                            width: 200px;
+                            margin: 0 auto;
+                            display: block;
+                        }
+
+                        .resume-name {
+                            text-align: center;
+                            color: white;
+                            padding-top: 50px;
+                        }
+
+                        &:after {
+                            background: inherit;
+                            content: "";
+                            display: block;
+                            height: 50%;
+                            left: 0;
+                            position: absolute;
+                            right: 0;
+                            z-index: -1;
+                            -webkit-backface-visibility: hidden;
+                        }
+
+                        &:after {
+                            bottom: 0;
+                            -webkit-transform: skewY(-2.5deg);
+                            transform: skewY(-2.5deg);
+                            -webkit-transform-origin: 100%;
+                            transform-origin: 100%;
+                        }
+
+                        .contact-info {
+                            text-align: center;
+                            padding: 10px 0;
+                            margin: 20px 0;
+                            color: white;
+
+                            .phone {
+                                margin-bottom: 20px;
+
+                                a {
+                                    color: white;
+                                }
+                            }
+
+                            .email {
+                                margin-bottom: 20px;
+
+                                a {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+
+                    #summary {
+                        padding: 50px 10px 0;
+
+                        .summary {
+                            padding: 0 20px;
+
+                            .skill-text {
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    #experience {
+                        padding: 0 20px;
+
+                        h2 {
+                            margin: 0 !important;
+                        }
+
+                        h3 {
+                            margin: 0 !important;
+                        }
+
+                        h4 {
+                            margin: 0 !important;
+                        }
+                        .past-employer {
+                            padding: 20px 0;
+                        }
+                    }
+                    #education {
+                        padding: 0 20px;
+                        .past-school {
+                            padding: 20px 0;
+                            .left {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	~~~~~MEDIA QUERIES~~~~
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and (min-width: 1100px) and (max-width: 1405px) {}
+
+@media only screen and (min-width: 992px) {
+    #experience .col-md-7 {
+        border-left: 2px solid black;
+    }
+
+    #education .col-md-8 {
+        border-left: 2px solid black;
+    }
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 990px) {
+    .past-employer {
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 20px;
+    }
+
+    .past-employer:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .past-school {
+        border-bottom: 1px solid #dedede;
+    }
+
+    .past-school:last-child {
+        border-bottom: none !important;
+    }
+
+    #references .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    #experience .employer-img {
+        padding-top: 0;
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 960px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 665px) {
+    .specializations ul {
+        padding-left: 0;
+    }
+
+    .skill-text {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    #computers ul {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #extra-skills {
+        display: none;
+    }
+}
