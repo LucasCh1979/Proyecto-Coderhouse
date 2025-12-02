@@ -26,6 +26,7 @@ main section .row #fixture--grilla--2da p, main section .row #fixture--grilla--3
   padding: 10px;
   font-size: 50px;
   opacity: 0;
+  color: black;
 }
 
 main #store--imagenes div p {
@@ -64,6 +65,13 @@ main .fondo--inicio h2 {
   font-weight: 400;
   font-style: normal;
   margin-top: 70px;
+  font-size: 40px;
+}
+
+main .h2--sedes {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 40px;
 }
 

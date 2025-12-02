@@ -6,6 +6,9 @@ main {
     .membrete--sedes {
         @extend %membretes;
     }
+    .h2--sedes {
+        @extend %h2--sedes;
+    }
     .carousel-inner {
         div {
             img {
