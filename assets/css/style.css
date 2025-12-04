@@ -43,13 +43,6 @@ main #store--imagenes div p {
   border-radius: 20px;
 }
 
-main .fondo--inicio .fixture--inicio, main .fondo--inicio .jugadores--inicio, main .fondo--inicio .sedes--inicio, main .fondo--inicio .ganadores--inicio, main .fondo--inicio .store--inicio, main .fondo--inicio .contacto--inicio {
-  background-color: hsla(60, 56%, 91%, 0.432);
-  text-align: center;
-  border: 2px solid lab(48.49% 17.43 28.3);
-  border-radius: 10px;
-}
-
 main .membrete--store, main .membrete--sedes, main .membrete--jugadores, main .membrete--ganadores, main .membrete--fixture, main #contacto--fondo .membrete--contacto, main .membrete--inicio {
   text-align: center;
 }
@@ -58,6 +51,13 @@ main .membrete--store h1, main .membrete--sedes h1, main .membrete--jugadores h1
   font-weight: 400;
   font-style: normal;
   font-size: 10vw;
+}
+
+main .fondo--inicio h2 a, main .fondo--inicio a {
+  text-decoration: none;
+  color: black;
+  background-color: hsla(180, 100%, 97%, 0.616);
+  border-radius: 5px;
 }
 
 main .fondo--inicio h2 {
@@ -93,44 +93,75 @@ main section .row #fixture--grilla--2da:hover img, main section .row #fixture--g
 }
 
 main .fondo--inicio {
-  background-image: url(/assets/img/cancha_tenis_doble_gradas_vertical.jpeg);
-  background-size: cover;
   border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 200px);
   grid-template-areas: "fixture" "jugadores" "sedes" "ganadores" "store" "contacto";
 }
-main .fondo--inicio h2 a {
-  text-decoration: none;
-  color: black;
-}
 main .fondo--inicio .fixture--inicio {
   grid-area: fixture;
+  background-image: url(/assets/img/fixture-32-jugadoreslargo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
+  border-radius: 10px;
 }
 main .fondo--inicio .jugadores--inicio {
   grid-area: jugadores;
+  background-image: url(/assets/img/tenistas5largo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
+  border-radius: 10px;
 }
 main .fondo--inicio .sedes--inicio {
   grid-area: sedes;
+  background-image: url(/assets/img/Estadionochelargo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
+  border-radius: 10px;
 }
 main .fondo--inicio .ganadores--inicio {
   grid-area: ganadores;
+  background-image: url(/assets/img/trofeoyraquetaslargo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
+  border-radius: 10px;
 }
 main .fondo--inicio .store--inicio {
   grid-area: store;
+  background-image: url(/assets/img/storelargo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
+  border-radius: 10px;
 }
 main .fondo--inicio .contacto--inicio {
   grid-area: contacto;
+  background-image: url(/assets/img/LucasGhiblilargo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
+  border-radius: 10px;
 }
 
 /*Contenido de pagina de Inicio Movil*/
 @media (max-width: 991px) {
-  main .fondo--inicio {
-    background-image: url(/assets/img/cancha_tenis_doble_gradas_horizontal.jpeg);
-    background-size: cover;
-    border-radius: 20px;
-  }
   main .fondo--inicio h2 {
     font-size: 40px;
     margin-top: 60px;
@@ -139,7 +170,7 @@ main .fondo--inicio .contacto--inicio {
 /*Pie de pagina y footer para todas las paginas*/
 .pie-de-pagina {
   display: flex;
-  background-image: url(/assets/img/header.jpg);
+  background-image: url(/assets/img/header.webp);
   height: 15vh;
   background-size: cover;
   padding: 10px;
@@ -358,7 +389,7 @@ main #contacto--fondo section .container #resume-container #education .past-scho
   padding: 10px;
 }
 .header .navbar {
-  background-image: url(/assets/img/header.jpg);
+  background-image: url(/assets/img/header.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

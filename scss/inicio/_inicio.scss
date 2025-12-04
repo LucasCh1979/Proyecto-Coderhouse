@@ -1,14 +1,14 @@
 /*Contenido de pagina de Inicio*/
 
 @use "../utilities/extend";
+@use "../utilities/mixin";
 
 main {
     .membrete--inicio {
         @extend %membretes;
     }
+
     .fondo--inicio {
-        background-image: url(/assets/img/cancha_tenis_doble_gradas_vertical.jpeg);
-        background-size: cover;
         border-radius: 20px;
         display: grid;
         grid-template-columns: 1fr;
@@ -23,41 +23,43 @@ main {
 
         h2 {
             @extend %h2--inicio;
-            
+
             a {
-                text-decoration: none;
-                color: black;
+                @extend %enlace-comentado;
             }
+        }
+        a {
+            @extend %enlace-comentado;
         }
 
         .fixture--inicio {
             grid-area: fixture;
-            @extend %back-inicio-botones;
+            @include mixin.back-image-inicio(url(/assets/img/fixture-32-jugadoreslargo.webp));
         }
 
         .jugadores--inicio {
             grid-area: jugadores;
-            @extend %back-inicio-botones;
+            @include mixin.back-image-inicio(url(/assets/img/tenistas5largo.webp));
         }
 
         .sedes--inicio {
             grid-area: sedes;
-            @extend %back-inicio-botones;
+            @include mixin.back-image-inicio(url(/assets/img/Estadionochelargo.webp));
         }
 
         .ganadores--inicio {
             grid-area: ganadores;
-            @extend %back-inicio-botones;
+            @include mixin.back-image-inicio(url(/assets/img/trofeoyraquetaslargo.webp));
         }
 
         .store--inicio {
             grid-area: store;
-            @extend %back-inicio-botones;
+            @include mixin.back-image-inicio(url(/assets/img/storelargo.webp));
         }
 
         .contacto--inicio {
             grid-area: contacto;
-            @extend %back-inicio-botones;
+            @include mixin.back-image-inicio(url(/assets/img/LucasGhiblilargo.webp));
         }
     }
 }
@@ -69,10 +71,6 @@ main {
 @media (max-width: 991px) {
     main {
         .fondo--inicio {
-            background-image: url(/assets/img/cancha_tenis_doble_gradas_horizontal.jpeg);
-            background-size: cover;
-            border-radius: 20px;
-
             h2 {
                 font-size: 40px;
                 margin-top: 60px;

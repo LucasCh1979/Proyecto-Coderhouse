@@ -24,14 +24,6 @@
     border-radius: 20px;
 }
 
-%back-inicio-botones {
-    background-color: hsla(60, 56%, 91%, 0.432);
-    text-align: center;
-    border: 2px solid lab(48.49% 17.43 28.3);
-    border-radius: 10px;
-
-}
-
 %membretes {
     text-align: center;
 
@@ -40,8 +32,14 @@
         font-weight: 400;
         font-style: normal;
         font-size: 10vw;
-
     }
+}
+
+%enlace-comentado {
+    text-decoration: none;
+    color: black;
+    background-color: hwb(180 94% 0% / 0.616);
+    border-radius: 5px;
 }
 
 %h2--inicio {
@@ -85,4 +83,3 @@
         }
     }
 }
-
