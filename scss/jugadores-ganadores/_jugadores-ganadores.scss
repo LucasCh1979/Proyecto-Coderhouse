@@ -1,11 +1,12 @@
 /*Contenido de la pagina de Jugadores */
 @use "../utilities/extend";
-
+@use "../utilities/variables";
 
 main {
     .membrete--jugadores {
         @extend %membretes;
     }
+
     .membrete--ganadores {
         @extend %membretes;
     }
@@ -15,33 +16,60 @@ main {
 
 
 
-            img {
-                height: 250px;
-                width: 250px;
-                border-radius: 5px;
-                margin: 19px;
+        img {
+            height: 250px;
+            width: 250px;
+            border-radius: 5px;
+            margin: 19px;
+        }
+
+        .barra {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            .dropdown {
+                .btn {
+                    color: black;
+                    font-family: "Amarante", serif;
+                    background: variables.$fondo-drop;
+                }
             }
 
-            .barra {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 30px;
-            }
-
-            .comentario {
-                background-color: black;
-                color: azure;
-                display: flex;
-                justify-content: center;
-            }
-
-            .tarjetas--jugadores {
-                .card {
-                    padding: 15px;
+            .dropdown-menu {
+                &.show {
+                    font-family: "Amarante", serif;
+                    font-size: 30px;
+                    width: 100%;
+                    background-color: rgba(255, 0, 0, 0);
+                    li {
+                        border: 1px solid black;
+                        padding: 10px;
+                        border-radius: 20px;
+                        background: variables.$fondo-drop;
+                        margin-bottom: 10px;
+                        a {
+                            border-radius: 20px;
+                        }
+                    }
                 }
             }
         }
+
+        .comentario {
+            background-color: black;
+            color: azure;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tarjetas--jugadores {
+            .card {
+                padding: 15px;
+            }
+        }
     }
+}
 
 
 

@@ -1,8 +1,199 @@
 /*Contenido de la pagina de Store */
 
 @use "../utilities/extend";
+@use "../utilities/variables";
+@use "sass:map";
+@use "../utilities/maps";
 
 main {
+    .membrete--store {
+        @extend %membretes;
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-columns: repeat(3, 28vw);
+        grid-template-areas:
+            "img1 img2 img3"
+            "img4 img5 img6"
+            "img7 img8 img9"
+            "img10 img11 img12";
+
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        margin: auto;
+        padding: 20px;
+
+
+        div {
+            position: relative;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: auto;
+                border-radius: 20px;
+                border: 2px solid variables.$bordes-shadow;
+                box-shadow: 5px 5px 10px variables.$bordes-shadow;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:hover {
+                &::after {
+                    transition: 0.8s;
+                    opacity: 1;
+                }
+            }
+        }
+
+        div {
+            &:first-child {
+                grid-area: img1;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen1);
+                }
+            }
+
+            &:nth-child(2) {
+                grid-area: img2;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen2);
+                }
+            }
+
+            &:nth-child(3) {
+                grid-area: img3;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen3);
+                }
+            }
+
+            &:nth-child(4) {
+                grid-area: img4;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen4);
+                }
+            }
+
+            &:nth-child(5) {
+                grid-area: img5;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen5);
+                }
+            }
+
+            &:nth-child(6) {
+                grid-area: img6;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen6);
+                }
+            }
+
+            &:nth-child(7) {
+                grid-area: img7;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen7);
+                }
+            }
+
+            &:nth-child(8) {
+                grid-area: img8;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen8);
+                }
+            }
+
+            &:nth-child(9) {
+                grid-area: img9;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen9);
+                }
+            }
+
+            &:nth-child(10) {
+                grid-area: img10;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen10);
+                }
+            }
+
+            &:nth-child(11) {
+                grid-area: img11;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen11);
+                }
+            }
+
+            &:last-child {
+                grid-area: img12;
+                &:after {
+                    @extend %hover--store;
+                    background-image: map.get(maps.$imagenes, imagen12);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    main {
+        .grilla {
+            display: grid;
+            grid-template-columns: repeat(1, 99%);
+            grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8"
+            "img9"
+            "img10"
+            "img11"
+            "img12";
+
+
+            div {
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: auto;
+                    border-radius: 20px;
+
+                    .imagen2 {
+                        margin-top: -1100px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+
+/*main {
     .membrete--store {
         @extend %membretes;
     }
@@ -34,4 +225,4 @@ main {
         }
 
     }
-}
+} */

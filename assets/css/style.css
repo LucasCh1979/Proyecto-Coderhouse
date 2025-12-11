@@ -29,18 +29,21 @@ main section .row #fixture--grilla--2da p, main section .row #fixture--grilla--3
   color: black;
 }
 
-main #store--imagenes div p {
-  position: absolute;
-  font-family: "Amarante", serif;
-  font-weight: 400;
-  font-style: normal;
-  bottom: 60px;
-  padding: 10px;
-  font-size: 50px;
-  opacity: 0;
-  background-color: lab(63.63% 34.28 69.09 / 0.13);
-  transform: rotate(-45deg);
+main #contacto--fondo section .container .row div figure img, main #contacto--fondo section .container #resume-container, main .fondo--inicio .fixture--inicio, main .fondo--inicio .jugadores--inicio, main .fondo--inicio .sedes--inicio, main .fondo--inicio .ganadores--inicio, main .fondo--inicio .store--inicio, main .fondo--inicio .contacto--inicio, main .grilla div:first-child:after, main .grilla div:nth-child(2):after, main .grilla div:nth-child(3):after, main .grilla div:nth-child(4):after, main .grilla div:nth-child(5):after, main .grilla div:nth-child(6):after, main .grilla div:nth-child(7):after, main .grilla div:nth-child(8):after, main .grilla div:nth-child(9):after, main .grilla div:nth-child(10):after, main .grilla div:nth-child(11):after, main .grilla div:last-child:after {
   border-radius: 20px;
+  border: 2px solid #f3c47d;
+  box-shadow: 5px 5px 10px #f3c47d;
+}
+
+main .grilla div:first-child:after, main .grilla div:nth-child(2):after, main .grilla div:nth-child(3):after, main .grilla div:nth-child(4):after, main .grilla div:nth-child(5):after, main .grilla div:nth-child(6):after, main .grilla div:nth-child(7):after, main .grilla div:nth-child(8):after, main .grilla div:nth-child(9):after, main .grilla div:nth-child(10):after, main .grilla div:nth-child(11):after, main .grilla div:last-child:after {
+  background-size: cover;
+  opacity: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 main .membrete--store, main .membrete--sedes, main .membrete--jugadores, main .membrete--ganadores, main .membrete--fixture, main #contacto--fondo .membrete--contacto, main .membrete--inicio {
@@ -50,14 +53,23 @@ main .membrete--store h1, main .membrete--sedes h1, main .membrete--jugadores h1
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 10vw;
+  font-size: 5vw;
 }
 
+@media (max-width: 991px) {
+  main .membrete--store h1, main .membrete--sedes h1, main .membrete--jugadores h1, main .membrete--ganadores h1, main .membrete--fixture h1, main #contacto--fondo .membrete--contacto h1, main .membrete--inicio h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10vw;
+  }
+}
 main .fondo--inicio h2 a, main .fondo--inicio a {
   text-decoration: none;
   color: black;
-  background-color: hsla(180, 100%, 97%, 0.616);
+  background-color: hsl(34, 23.8095238095%, 89.5%);
   border-radius: 5px;
+  text-align: end;
 }
 
 main .fondo--inicio h2 {
@@ -68,11 +80,26 @@ main .fondo--inicio h2 {
   font-size: 40px;
 }
 
-main .h2--sedes {
+main .h2--sedes, main .carousel-inner div div h2 {
   font-family: "Amarante", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
+}
+
+main .sedes ul li, main #tarjetas .card .card-body ul li {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+main #tarjetas .card .card-body h5 {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
 }
 
 main section .row #fixture--grilla--2da, main section .row #fixture--grilla--3ra, main section .row #fixture--grilla--4ta, main section .row #fixture--grilla--5ta, main section .row #fixture--grilla--6ta, main section .row #fixture--grilla--doblesmasc, main section .row #fixture--grilla--doblesfem, main section .row #fixture--grilla--doblesmix, main section .row #fixture--grilla--americano {
@@ -92,82 +119,75 @@ main section .row #fixture--grilla--2da:hover img, main section .row #fixture--g
   transform: scale(1.15);
 }
 
-main .fondo--inicio {
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 200px);
-  grid-template-areas: "fixture" "jugadores" "sedes" "ganadores" "store" "contacto";
-}
 main .fondo--inicio .fixture--inicio {
-  grid-area: fixture;
-  background-image: url(/assets/img/fixture-32-jugadoreslargo.webp);
+  background-image: url(/assets/img/fixtureghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
   border-radius: 10px;
+  height: 50vh;
+  margin-bottom: 10px;
 }
 main .fondo--inicio .jugadores--inicio {
-  grid-area: jugadores;
-  background-image: url(/assets/img/tenistas5largo.webp);
+  background-image: url(/assets/img/tenistasghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
   border-radius: 10px;
+  height: 50vh;
+  margin-bottom: 10px;
 }
 main .fondo--inicio .sedes--inicio {
-  grid-area: sedes;
-  background-image: url(/assets/img/Estadionochelargo.webp);
+  background-image: url(/assets/img/estadioghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
   border-radius: 10px;
+  height: 50vh;
+  margin-bottom: 10px;
 }
 main .fondo--inicio .ganadores--inicio {
-  grid-area: ganadores;
-  background-image: url(/assets/img/trofeoyraquetaslargo.webp);
+  background-image: url(/assets/img/trofeoyraquetasghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
   border-radius: 10px;
+  height: 50vh;
+  margin-bottom: 10px;
 }
 main .fondo--inicio .store--inicio {
-  grid-area: store;
-  background-image: url(/assets/img/storelargo.webp);
+  background-image: url(/assets/img/storeghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
   border-radius: 10px;
+  height: 50vh;
+  margin-bottom: 10px;
 }
 main .fondo--inicio .contacto--inicio {
-  grid-area: contacto;
-  background-image: url(/assets/img/LucasGhiblilargo.webp);
+  background-image: url(/assets/img/LucasGhiblilargo512.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  border: 2px solid lch(82.95% 10.6 63.67deg / 0.925);
   border-radius: 10px;
+  height: 50vh;
 }
 
-/*Contenido de pagina de Inicio Movil*/
-@media (max-width: 991px) {
-  main .fondo--inicio h2 {
-    font-size: 40px;
-    margin-top: 60px;
-  }
-}
 /*Pie de pagina y footer para todas las paginas*/
+.volver-arriba {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.volver-arriba a {
+  font-family: "Amarante", serif;
+  color: hsl(0, 5%, 37%);
+  text-decoration: none;
+  background-color: rgba(240, 248, 255, 0.74);
+  border-radius: 4px;
+  font-size: 20px;
+}
+
 .pie-de-pagina {
   display: flex;
   background-image: url(/assets/img/header.webp);
@@ -175,27 +195,27 @@ main .fondo--inicio .contacto--inicio {
   background-size: cover;
   padding: 10px;
   gap: 30px;
-  justify-content: space-between;
   margin: 10px 10px 10px 10px;
   border-radius: 20px;
-}
-.pie-de-pagina .volver-arriba a {
-  color: hsl(0, 5%, 37%);
-  text-decoration: none;
-  background-color: rgba(240, 248, 255, 0.74);
-  border-radius: 4px;
+  justify-content: end;
 }
 .pie-de-pagina .footer {
+  font-family: "Amarante", serif;
   text-align: end;
   color: hsl(15, 5.2631578947%, 9.5%);
   font-size: 20%;
+  background-color: rgba(240, 248, 255, 0.74);
+  border-radius: 4px;
+  height: 40%;
 }
 
 /*Contenido de la pagina de Contacto */
+main #contacto--fondo section .container .row div figure {
+  padding: 12px;
+}
 main #contacto--fondo section .container .row div figure img {
   width: 100%;
   border-radius: 20px;
-  padding: 12px;
 }
 main #contacto--fondo section .container #resume-container {
   background: rgb(255, 255, 255);
@@ -351,6 +371,9 @@ main #contacto--fondo section .container #resume-container #education .past-scho
   }
 }
 /*Contenido de la pagina de Fixture*/
+main div div div section img {
+  border-radius: 20px;
+}
 /*Nombres de los torneos en vistas movil*/
 @media (max-width: 991px) {
   main section .row #fixture--grilla--2da p {
@@ -395,22 +418,24 @@ main #contacto--fondo section .container #resume-container #education .past-scho
   background-repeat: no-repeat;
   height: 150px;
   border-radius: 20px;
-  position: relative;
 }
 .header .navbar .navbar-brand img {
   height: 22vh;
 }
 .header .navbar button .navbar-toggler-icon {
-  background-color: lch(84.14% 34.44 87.9deg / 0.637);
+  background-color: hsl(34, 23.8095238095%, 89.5%);
   border-radius: 4px;
 }
 .header .navbar div .navbar-nav {
-  background-color: lab(84.14% 1.26 34.41 / 0.527);
+  background-color: hsla(208, 100%, 97%, 0.37);
   padding: 10px;
   font-family: "Amarante", serif;
+  text-align: center;
+  font-size: 22px;
 }
 .header .navbar div .navbar-nav .nav-link {
-  background-color: hsl(208, 100%, 97%);
+  background-color: hsl(34, 23.8095238095%, 89.5%);
+  background-size: cover;
   border-radius: 4px;
 }
 
@@ -421,6 +446,38 @@ main #contacto--fondo section .container #resume-container #education .past-scho
   z-index: 3;
 }
 
+@media (max-width: 991px) {
+  .header {
+    padding: 10px;
+  }
+  .header .navbar {
+    background-image: url(/assets/img/header.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    border-radius: 20px;
+  }
+  .header .navbar .navbar-brand img {
+    height: 22vh;
+  }
+  .header .navbar button .navbar-toggler-icon {
+    background-color: hsl(34, 23.8095238095%, 89.5%);
+    border-radius: 4px;
+  }
+  .header .navbar div .navbar-nav {
+    background-color: hsla(208, 100%, 97%, 0.37);
+    padding: 10px;
+    font-family: "Amarante", serif;
+    text-align: center;
+    font-size: 45px;
+  }
+  .header .navbar div .navbar-nav .nav-link {
+    background-color: hsl(208, 100%, 97%);
+    background-size: cover;
+    border-radius: 4px;
+  }
+}
 /*Contenido de la pagina de Jugadores */
 main .fondo--jugadores {
   padding: 0px 10px;
@@ -435,6 +492,27 @@ main .fondo--jugadores .barra {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+}
+main .fondo--jugadores .barra .dropdown .btn {
+  color: black;
+  font-family: "Amarante", serif;
+  background: linear-gradient(-45deg, hsl(34, 82%, 63%), hsl(34, 23.8095238095%, 89.5%), hsl(34, 82%, 63%), hsl(34, 23.8095238095%, 89.5%));
+}
+main .fondo--jugadores .barra .dropdown-menu.show {
+  font-family: "Amarante", serif;
+  font-size: 30px;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0);
+}
+main .fondo--jugadores .barra .dropdown-menu.show li {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, hsl(34, 82%, 63%), hsl(34, 23.8095238095%, 89.5%), hsl(34, 82%, 63%), hsl(34, 23.8095238095%, 89.5%));
+  margin-bottom: 10px;
+}
+main .fondo--jugadores .barra .dropdown-menu.show li a {
+  border-radius: 20px;
 }
 main .fondo--jugadores .comentario {
   background-color: black;
@@ -453,6 +531,9 @@ main .fondo--jugadores .tarjetas--jugadores .card {
   }
 }
 /*Contenido de la pagina de Sedes */
+main .h2--sedes img {
+  border-radius: 20px;
+}
 main .carousel-inner div img {
   width: 1fr;
   height: 40vh;
@@ -466,27 +547,158 @@ main #tarjetas .card a img {
   height: 150px;
   border-radius: 20px;
 }
-
 /*Contenido de la pagina de Store */
-main .comentario {
-  color: white;
-  background-color: black;
+main .grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 28vw);
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9" "img10 img11 img12";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  padding: 20px;
 }
-main #store--imagenes div {
+main .grilla div {
   position: relative;
 }
-main #store--imagenes div img {
-  height: 250px;
-  width: 250px;
-  padding: 10px;
-  border: 2px solid lab(48.49% 17.43 28.3);
-  border-radius: 10px;
+main .grilla div img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #f3c47d;
+  box-shadow: 5px 5px 10px #f3c47d;
 }
-main #store--imagenes div:hover {
+main .grilla div:hover {
   cursor: pointer;
 }
-main #store--imagenes div:hover p {
+main .grilla div:hover::after {
+  transition: 0.8s;
   opacity: 1;
 }
+main .grilla div:first-child {
+  grid-area: img1;
+}
+main .grilla div:first-child:after {
+  background-image: url(/assets/img/raq11.webp);
+}
+main .grilla div:nth-child(2) {
+  grid-area: img2;
+}
+main .grilla div:nth-child(2):after {
+  background-image: url(/assets/img/raq21.webp);
+}
+main .grilla div:nth-child(3) {
+  grid-area: img3;
+}
+main .grilla div:nth-child(3):after {
+  background-image: url(/assets/img/raq31.webp);
+}
+main .grilla div:nth-child(4) {
+  grid-area: img4;
+}
+main .grilla div:nth-child(4):after {
+  background-image: url(/assets/img/raq41.webp);
+}
+main .grilla div:nth-child(5) {
+  grid-area: img5;
+}
+main .grilla div:nth-child(5):after {
+  background-image: url(/assets/img/zapa11.webp);
+}
+main .grilla div:nth-child(6) {
+  grid-area: img6;
+}
+main .grilla div:nth-child(6):after {
+  background-image: url(/assets/img/zapa21.webp);
+}
+main .grilla div:nth-child(7) {
+  grid-area: img7;
+}
+main .grilla div:nth-child(7):after {
+  background-image: url(/assets/img/zapa31.webp);
+}
+main .grilla div:nth-child(8) {
+  grid-area: img8;
+}
+main .grilla div:nth-child(8):after {
+  background-image: url(/assets/img/zapa41.webp);
+}
+main .grilla div:nth-child(9) {
+  grid-area: img9;
+}
+main .grilla div:nth-child(9):after {
+  background-image: url(/assets/img/bol11.webp);
+}
+main .grilla div:nth-child(10) {
+  grid-area: img10;
+}
+main .grilla div:nth-child(10):after {
+  background-image: url(/assets/img/bol21.webp);
+}
+main .grilla div:nth-child(11) {
+  grid-area: img11;
+}
+main .grilla div:nth-child(11):after {
+  background-image: url(/assets/img/pelo11.webp);
+}
+main .grilla div:last-child {
+  grid-area: img12;
+}
+main .grilla div:last-child:after {
+  background-image: url(/assets/img/pelo21.webp);
+}
+
+@media (max-width: 991px) {
+  main .grilla {
+    display: grid;
+    grid-template-columns: repeat(1, 99%);
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11" "img12";
+  }
+  main .grilla div img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 20px;
+  }
+  main .grilla div img .imagen2 {
+    margin-top: -1100px;
+  }
+}
+/*main {
+    .membrete--store {
+        @extend %membretes;
+    }
+
+    .comentario {
+        color: white;
+        background-color: black;
+    }
+
+    #store--imagenes {
+        div {
+            position: relative;
+            img {
+                height: 250px;
+                width: 250px;
+                padding: 10px;
+                border: 2px solid lab(48.49% 17.43 28.3);
+                border-radius: 10px;
+            }
+            p {
+                @extend %parrafo--store;
+            }
+            &:hover {
+                cursor: pointer;
+                p {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+} */
 
 /*# sourceMappingURL=style.css.map */

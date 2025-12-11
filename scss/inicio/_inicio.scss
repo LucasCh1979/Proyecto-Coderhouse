@@ -2,6 +2,7 @@
 
 @use "../utilities/extend";
 @use "../utilities/mixin";
+@use "../utilities/variables";
 
 main {
     .membrete--inicio {
@@ -9,18 +10,6 @@ main {
     }
 
     .fondo--inicio {
-        border-radius: 20px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 200px);
-        grid-template-areas:
-            "fixture"
-            "jugadores"
-            "sedes"
-            "ganadores"
-            "store"
-            "contacto";
-
         h2 {
             @extend %h2--inicio;
 
@@ -28,53 +17,44 @@ main {
                 @extend %enlace-comentado;
             }
         }
+
         a {
             @extend %enlace-comentado;
         }
 
         .fixture--inicio {
-            grid-area: fixture;
-            @include mixin.back-image-inicio(url(/assets/img/fixture-32-jugadoreslargo.webp));
+            @include mixin.back-image-inicio(url(/assets/img/fixtureghibli500.webp));
+            margin-bottom: variables.$margen-abajo;
+            @extend %sombreado;
         }
 
         .jugadores--inicio {
-            grid-area: jugadores;
-            @include mixin.back-image-inicio(url(/assets/img/tenistas5largo.webp));
+            @include mixin.back-image-inicio(url(/assets/img/tenistasghibli500.webp));
+            margin-bottom: variables.$margen-abajo;
+            @extend %sombreado;
         }
 
         .sedes--inicio {
-            grid-area: sedes;
-            @include mixin.back-image-inicio(url(/assets/img/Estadionochelargo.webp));
+            @include mixin.back-image-inicio(url(/assets/img/estadioghibli500.webp));
+            margin-bottom: variables.$margen-abajo;
+            @extend %sombreado;
         }
 
         .ganadores--inicio {
-            grid-area: ganadores;
-            @include mixin.back-image-inicio(url(/assets/img/trofeoyraquetaslargo.webp));
+            @include mixin.back-image-inicio(url(/assets/img/trofeoyraquetasghibli500.webp));
+            margin-bottom: variables.$margen-abajo;
+            @extend %sombreado;
         }
 
         .store--inicio {
-            grid-area: store;
-            @include mixin.back-image-inicio(url(/assets/img/storelargo.webp));
+            @include mixin.back-image-inicio(url(/assets/img/storeghibli500.webp));
+            margin-bottom: variables.$margen-abajo;
+            @extend %sombreado;
         }
 
         .contacto--inicio {
-            grid-area: contacto;
-            @include mixin.back-image-inicio(url(/assets/img/LucasGhiblilargo.webp));
-        }
-    }
-}
-
-
-
-/*Contenido de pagina de Inicio Movil*/
-
-@media (max-width: 991px) {
-    main {
-        .fondo--inicio {
-            h2 {
-                font-size: 40px;
-                margin-top: 60px;
-            }
+            @include mixin.back-image-inicio(url(/assets/img/LucasGhiblilargo512.jpg));
+            @extend %sombreado;
         }
     }
 }

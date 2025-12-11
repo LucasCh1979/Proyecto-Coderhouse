@@ -1,4 +1,19 @@
 /*Pie de pagina y footer para todas las paginas*/
+.volver-arriba {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    a {
+        font-family: "Amarante", serif;
+        color: hsl(0, 5%, 37%);
+        text-decoration: none;
+        background-color: rgba(240, 248, 255, 0.74);
+        border-radius: 4px;
+        font-size: 20px;
+
+    }
+}
 
 .pie-de-pagina {
     display: flex;
@@ -7,24 +22,19 @@
     background-size: cover;
     padding: 10px;
     gap: 30px;
-    justify-content: space-between;
     margin: 10px 10px 10px 10px;
     border-radius: 20px;
+    justify-content: end;
 
-    .volver-arriba {
-        a {
-            color: hsl(0, 5%, 37%);
-            text-decoration: none;
-            background-color: rgba(240, 248, 255, 0.74);
-            border-radius: 4px;
-        }
-    }
+
+
     .footer {
+        font-family: "Amarante", serif;
         text-align: end;
         color: hwb(15 9% 90%);
         font-size: 20%;
+        background-color: rgba(240, 248, 255, 0.74);
+        border-radius: 4px;
+        height: 40%;
     }
 }
-
-
-

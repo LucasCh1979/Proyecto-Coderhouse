@@ -5,6 +5,18 @@ main {
     .membrete--fixture {
         @extend %membretes
     }
+    div {
+        div {
+            div {
+                section {
+                    img {
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+
 
     section {
         .row {
@@ -15,12 +27,12 @@ main {
             #fixture--grilla--3ra {
                 @extend %hover--fixture;
             }
-            
+
 
             #fixture--grilla--4ta {
                 @extend %hover--fixture;
             }
-            
+
 
             #fixture--grilla--5ta {
                 @extend %hover--fixture;

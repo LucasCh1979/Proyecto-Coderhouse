@@ -1,6 +1,7 @@
 /*Contenido de la pagina de Sedes */
 
 @use "../utilities/extend";
+@use "../utilities/variables";
 
 main {
     .membrete--sedes {
@@ -8,6 +9,16 @@ main {
     }
     .h2--sedes {
         @extend %h2--sedes;
+        img {
+            border-radius: 20px;
+        }
+    }
+    .sedes {
+        ul {
+            li {
+                @extend %li--sedes;
+            }
+        }
     }
     .carousel-inner {
         div {
@@ -15,6 +26,11 @@ main {
                 width: 1fr;
                 height: 40vh;
                 border-radius: 20px;
+            }
+            div {
+                h2 {
+                    @extend %h2--sedes;
+                }
             }
         }
     }
@@ -28,6 +44,16 @@ main {
                     width: 266px;
                     height: 150px;
                     border-radius: 20px;
+                }
+            }
+            .card-body {
+                h5 {
+                    @extend %li--h5--sedes;
+                }
+                ul {
+                    li {
+                        @extend %li--sedes;
+                    }
                 }
             }
         }
