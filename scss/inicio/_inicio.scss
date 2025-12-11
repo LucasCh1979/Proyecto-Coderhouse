@@ -53,7 +53,7 @@ main {
         }
 
         .contacto--inicio {
-            @include mixin.back-image-inicio(url(/assets/img/LucasGhiblilargo512.jpg));
+            @include mixin.back-image-inicio(url(/assets/img/LucasGhibli500.webp));
             @extend %sombreado;
         }
     }
