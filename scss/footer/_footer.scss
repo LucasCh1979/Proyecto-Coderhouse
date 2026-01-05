@@ -26,8 +26,6 @@
     border-radius: 20px;
     justify-content: end;
 
-
-
     .footer {
         font-family: "Amarante", serif;
         text-align: end;
@@ -36,5 +34,26 @@
         background-color: rgba(240, 248, 255, 0.74);
         border-radius: 4px;
         height: 40%;
+    }
+
+    .footer--link {
+        a {
+            font-family: "Amarante", serif;
+            text-align: end;
+            color: hwb(15 9% 90%);
+            font-size: 20%;
+            background-color: rgba(240, 248, 255, 0.74);
+            border-radius: 4px;
+            height: 40%;
+            text-decoration: none;
+            cursor: default;
+
+            h3 {
+                background-color: rgba(240, 248, 255, 0.74);
+                border-radius: 4px;
+                height: 40%;
+            }
+
+        }
     }
 }

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto-Coderhouse Tenis Tour | Jugadores</title>
+    <title>Proyecto-Coderhouse Tenis Tour | Datos de Jugadores</title>
 
     <meta name="description"
-        content=" Todos los jugadores de todas las categorias estan aca buscalos por nombre o categoria.- ">
+        content=" Donde jugas? Como llegar? A quien preguntarle? aca tenes toda la info para aclarar esas interrogantes.- ">
 
-    <meta name="keywords" content="Tenis, Torneos, Jugadores, Ganadores, Tarjetas">
+    <meta name="keywords" content="Tenis, Canchas, Direccion, Sedes, Tarjetas, Telefono">
 
     <!-- BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,22 +30,21 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- JS -->
-    <script defer src="../js/jugadores.js"></script>
+    <script defer src="../js/datosjugadores.js"></script>
 
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body class="fondo">
+<body>
     <!-- Header y barra de navegacion-->
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid ">
-                <a class="navbar-brand" href="#"><img src="../assets/img/coderhousetenistour500.webp" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="/assets/img/coderhousetenistour500.webp" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -80,34 +79,30 @@
         </nav>
     </header>
     <main>
-        <div class="membrete--jugadores  container animate__animated animate__zoomIn">
-            <h1>Jugadores</h1>
-        </div>
-        <div class="fondo--jugadores justify-items-center">
-            <div class="container text-center">
-                <select id="filtroCategoria">
-                    <option value="">Selecciona una categoría</option>
-                    <option value="2da">2da</option>
-                    <option value="3era">3era</option>
-                    <option value="4ta">4ta</option>
-                    <option value="5ta">5ta</option>
-                    <option value="6ta">6ta</option>
-                </select>
-            </div>
-            <section class="container" id="fotos--jugadores">
-                <div class="row" id="resultados">    <!-- Aquí se mostrarán las tarjetas de jugador -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                ...
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <form id="formUsuario">
+                        <select id="categoria" required>
+                            <option value="" disabled selected>Selecciona una categoría</option>
+                            <option value="2da">2da</option>
+                            <option value="3era">3era</option>
+                            <option value="4ta">4ta</option>
+                            <option value="5ta">5ta</option>
+                            <option value="6ta">6ta</option>
+                            </select>
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                        <input type="text" id="apellido" placeholder="Apellido" required>
+                        <input type="number" id="edad" placeholder="Edad" required>
+                        <input type="text" id="etapa" placeholder="Mejor etapa">
+                        <input type="contacto" id="contacto" placeholder="Contacto">
+                        <input type="file" id="foto" accept="image/*">
+                        <button type="submit">Guardar</button>
+                    </form>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
-
     <!--Pie de pagina hecho con Flexbox-->
     <footer>
         <section class="volver-arriba">
@@ -123,6 +118,7 @@
         </div>
     </footer>
 
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -134,8 +130,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

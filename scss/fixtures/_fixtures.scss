@@ -5,12 +5,24 @@ main {
     .membrete--fixture {
         @extend %membretes
     }
+
     div {
         div {
             div {
-                section {
+                section.fixture--back {
+                    position: relative;
+
                     img {
                         border-radius: 20px;
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                    .jugador--left {
+                        @extend %nombre--fixture--left
+                    }
+                    .jugador--right {
+                        @extend %nombre--fixture--right
                     }
                 }
             }

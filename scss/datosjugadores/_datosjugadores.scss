@@ -1,0 +1,7 @@
+@use "../utilities/extend";
+
+main {
+    .membrete--inicio {
+        @extend %membretes;
+    }
+}
