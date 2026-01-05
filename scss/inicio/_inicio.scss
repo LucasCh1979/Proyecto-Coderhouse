@@ -23,37 +23,37 @@ main {
         }
 
         .fixture--inicio {
-            @include mixin.back-image-inicio(url(/assets/img/fixtureghibli500.webp));
+            @include mixin.back-image-inicio(url(../../assets/img/fixtureghibli500.webp));
             margin-bottom: variables.$margen-abajo;
             @extend %sombreado;
         }
 
         .jugadores--inicio {
-            @include mixin.back-image-inicio(url(/assets/img/tenistasghibli500.webp));
+            @include mixin.back-image-inicio(url(../../assets/img/tenistasghibli500.webp));
             margin-bottom: variables.$margen-abajo;
             @extend %sombreado;
         }
 
         .sedes--inicio {
-            @include mixin.back-image-inicio(url(/assets/img/estadioghibli500.webp));
+            @include mixin.back-image-inicio(url(../../assets/img/estadioghibli500.webp));
             margin-bottom: variables.$margen-abajo;
             @extend %sombreado;
         }
 
         .ganadores--inicio {
-            @include mixin.back-image-inicio(url(/assets/img/trofeoyraquetasghibli500.webp));
+            @include mixin.back-image-inicio(url(../../assets/img/trofeoyraquetasghibli500.webp));
             margin-bottom: variables.$margen-abajo;
             @extend %sombreado;
         }
 
         .store--inicio {
-            @include mixin.back-image-inicio(url(/assets/img/storeghibli500.webp));
+            @include mixin.back-image-inicio(url(../../assets/img/storeghibli500.webp));
             margin-bottom: variables.$margen-abajo;
             @extend %sombreado;
         }
 
         .contacto--inicio {
-            @include mixin.back-image-inicio(url(/assets/img/LucasGhibli500.webp));
+            @include mixin.back-image-inicio(url(../../assets/img/LucasGhibli500.webp));
             @extend %sombreado;
         }
     }

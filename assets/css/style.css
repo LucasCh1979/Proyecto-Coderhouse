@@ -140,7 +140,7 @@ main div div div section.fixture--back .jugador--right {
 }
 
 main .fondo--inicio .fixture--inicio {
-  background-image: url(/assets/img/fixtureghibli500.webp);
+  background-image: url(../../assets/img/fixtureghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -149,7 +149,7 @@ main .fondo--inicio .fixture--inicio {
   margin-bottom: 10px;
 }
 main .fondo--inicio .jugadores--inicio {
-  background-image: url(/assets/img/tenistasghibli500.webp);
+  background-image: url(../../assets/img/tenistasghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,7 +158,7 @@ main .fondo--inicio .jugadores--inicio {
   margin-bottom: 10px;
 }
 main .fondo--inicio .sedes--inicio {
-  background-image: url(/assets/img/estadioghibli500.webp);
+  background-image: url(../../assets/img/estadioghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ main .fondo--inicio .sedes--inicio {
   margin-bottom: 10px;
 }
 main .fondo--inicio .ganadores--inicio {
-  background-image: url(/assets/img/trofeoyraquetasghibli500.webp);
+  background-image: url(../../assets/img/trofeoyraquetasghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ main .fondo--inicio .ganadores--inicio {
   margin-bottom: 10px;
 }
 main .fondo--inicio .store--inicio {
-  background-image: url(/assets/img/storeghibli500.webp);
+  background-image: url(../../assets/img/storeghibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ main .fondo--inicio .store--inicio {
   margin-bottom: 10px;
 }
 main .fondo--inicio .contacto--inicio {
-  background-image: url(/assets/img/LucasGhibli500.webp);
+  background-image: url(../../assets/img/LucasGhibli500.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,7 +210,7 @@ main .fondo--inicio .contacto--inicio {
 
 .pie-de-pagina {
   display: flex;
-  background-image: url(/assets/img/header.webp);
+  background-image: url(../../assets/img/header.webp);
   height: 15vh;
   background-size: cover;
   padding: 10px;
@@ -624,73 +624,73 @@ main .grilla div:first-child {
   grid-area: img1;
 }
 main .grilla div:first-child:after {
-  background-image: url(/assets/img/raq11.webp);
+  background-image: url(../../assets/img/raq11.webp);
 }
 main .grilla div:nth-child(2) {
   grid-area: img2;
 }
 main .grilla div:nth-child(2):after {
-  background-image: url(/assets/img/raq21.webp);
+  background-image: url(../../assets/img/raq21.webp);
 }
 main .grilla div:nth-child(3) {
   grid-area: img3;
 }
 main .grilla div:nth-child(3):after {
-  background-image: url(/assets/img/raq31.webp);
+  background-image: url(../../assets/img/raq31.webp);
 }
 main .grilla div:nth-child(4) {
   grid-area: img4;
 }
 main .grilla div:nth-child(4):after {
-  background-image: url(/assets/img/raq41.webp);
+  background-image: url(../../assets/img/raq41.webp);
 }
 main .grilla div:nth-child(5) {
   grid-area: img5;
 }
 main .grilla div:nth-child(5):after {
-  background-image: url(/assets/img/zapa11.webp);
+  background-image: url(../../assets/img/zapa11.webp);
 }
 main .grilla div:nth-child(6) {
   grid-area: img6;
 }
 main .grilla div:nth-child(6):after {
-  background-image: url(/assets/img/zapa21.webp);
+  background-image: url(../../assets/img/zapa21.webp);
 }
 main .grilla div:nth-child(7) {
   grid-area: img7;
 }
 main .grilla div:nth-child(7):after {
-  background-image: url(/assets/img/zapa31.webp);
+  background-image: url(../../assets/img/zapa31.webp);
 }
 main .grilla div:nth-child(8) {
   grid-area: img8;
 }
 main .grilla div:nth-child(8):after {
-  background-image: url(/assets/img/zapa41.webp);
+  background-image: url(../../assets/img/zapa41.webp);
 }
 main .grilla div:nth-child(9) {
   grid-area: img9;
 }
 main .grilla div:nth-child(9):after {
-  background-image: url(/assets/img/bol11.webp);
+  background-image: url(../../assets/img/bol11.webp);
 }
 main .grilla div:nth-child(10) {
   grid-area: img10;
 }
 main .grilla div:nth-child(10):after {
-  background-image: url(/assets/img/bol21.webp);
+  background-image: url(../../assets/img/bol21.webp);
 }
 main .grilla div:nth-child(11) {
   grid-area: img11;
 }
 main .grilla div:nth-child(11):after {
-  background-image: url(/assets/img/pelo11.webp);
+  background-image: url(../../assets/img/pelo11.webp);
 }
 main .grilla div:last-child {
   grid-area: img12;
 }
 main .grilla div:last-child:after {
-  background-image: url(/assets/img/pelo21.webp);
+  background-image: url(../../assets/img/pelo21.webp);
 }
 
 @media (max-width: 991px) {
@@ -709,38 +709,5 @@ main .grilla div:last-child:after {
     margin-top: -1100px;
   }
 }
-/*main {
-    .membrete--store {
-        @extend %membretes;
-    }
-
-    .comentario {
-        color: white;
-        background-color: black;
-    }
-
-    #store--imagenes {
-        div {
-            position: relative;
-            img {
-                height: 250px;
-                width: 250px;
-                padding: 10px;
-                border: 2px solid lab(48.49% 17.43 28.3);
-                border-radius: 10px;
-            }
-            p {
-                @extend %parrafo--store;
-            }
-            &:hover {
-                cursor: pointer;
-                p {
-                    opacity: 1;
-                }
-            }
-        }
-
-    }
-} */
 
 /*# sourceMappingURL=style.css.map */
