@@ -1,0 +1,83 @@
+[
+  {
+    "categoria": "5ta",
+    "nombre": "Lucas",
+    "apellido": "Chariano",
+    "edad": "46",
+    "etapa": "arrancando",
+    "contacto": "lucasch1979@gmail.com",
+    "foto": "foto2.webp"
+  },
+  {
+    "categoria": "2da",
+    "nombre": "Gise",
+    "apellido": "Lozano",
+    "edad": "1",
+    "etapa": "1",
+    "contacto": "gise@loza",
+    "foto": "jugadora2.jpg"
+  },
+  {
+    "categoria": "5ta",
+    "nombre": "Anna",
+    "apellido": "Chariano",
+    "edad": "2",
+    "etapa": "arrancando",
+    "contacto": "1@w",
+    "foto": "jugadora4.jpg"
+  },
+  {
+    "categoria": "3era",
+    "nombre": "Alma",
+    "apellido": "Chariano",
+    "edad": "6",
+    "etapa": "arrancando",
+    "contacto": "1@w",
+    "foto": "jugadora.jpg"
+  },
+  {
+    "categoria": "4ta",
+    "nombre": "Emma",
+    "apellido": "Chariano",
+    "edad": "10",
+    "etapa": "arrancando",
+    "contacto": "1@w",
+    "foto": "jugadora3.jpg"
+  },
+  {
+    "categoria": "3era",
+    "nombre": "Bruno",
+    "apellido": "Bozutto",
+    "edad": "32",
+    "etapa": "2",
+    "contacto": "1@w",
+    "foto": "jugador5500.webp"
+  },
+  {
+    "categoria": "2da",
+    "nombre": "Lolo",
+    "apellido": "Patito",
+    "edad": "8",
+    "etapa": "arrancando",
+    "contacto": "1@w",
+    "foto": "jugador3500.webp"
+  },
+  {
+    "categoria": "6ta",
+    "nombre": "Bartolito",
+    "apellido": "Gallo",
+    "edad": "13",
+    "etapa": "bien",
+    "contacto": "1@w",
+    "foto": "jugador1500.webp"
+  },
+  {
+    "categoria": "6ta",
+    "nombre": "Ginu",
+    "apellido": "Huntrix",
+    "edad": "17",
+    "etapa": "caza",
+    "contacto": "1@w",
+    "foto": "jugador4500.webp"
+  }
+]

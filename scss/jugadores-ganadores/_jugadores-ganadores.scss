@@ -66,6 +66,12 @@ main {
         .tarjetas--jugadores {
             .card {
                 padding: 15px;
+                width: 18rem;
+                background: variables.$fondo-drop;
+
+                img {
+                    width: 88%;
+                }
             }
         }
     }

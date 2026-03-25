@@ -1,0 +1,37 @@
+const FIXTURE_32 = [
+    // LEFT
+    { index: 1, lado: "left", top: 8.5, estado: "libre", jugador: null },
+    { index: 2, lado: "left", top: 13.8, estado: "libre", jugador: null },
+    { index: 3, lado: "left", top: 19.0, estado: "libre", jugador: null },
+    { index: 4, lado: "left", top: 24.1, estado: "libre", jugador: null },
+    { index: 5, lado: "left", top: 29.4, estado: "libre", jugador: null },
+    { index: 6, lado: "left", top: 34.6, estado: "libre", jugador: null },
+    { index: 7, lado: "left", top: 39.8, estado: "libre", jugador: null },
+    { index: 8, lado: "left", top: 45.0, estado: "libre", jugador: null },
+    { index: 9, lado: "left", top: 50.4, estado: "libre", jugador: null },
+    { index: 10, lado: "left", top: 55.5, estado: "libre", jugador: null },
+    { index: 11, lado: "left", top: 60.8, estado: "libre", jugador: null },
+    { index: 12, lado: "left", top: 66.0, estado: "libre", jugador: null },
+    { index: 13, lado: "left", top: 71.2, estado: "libre", jugador: null },
+    { index: 14, lado: "left", top: 76.4, estado: "libre", jugador: null },
+    { index: 15, lado: "left", top: 81.6, estado: "libre", jugador: null },
+    { index: 16, lado: "left", top: 86.8, estado: "libre", jugador: null },
+
+    // RIGHT
+    { index: 17, lado: "right", top: 8.5, estado: "libre", jugador: null },
+    { index: 18, lado: "right", top: 13.8, estado: "libre", jugador: null },
+    { index: 19, lado: "right", top: 19.0, estado: "libre", jugador: null },
+    { index: 20, lado: "right", top: 24.1, estado: "libre", jugador: null },
+    { index: 21, lado: "right", top: 29.4, estado: "libre", jugador: null },
+    { index: 22, lado: "right", top: 34.6, estado: "libre", jugador: null },
+    { index: 23, lado: "right", top: 39.8, estado: "libre", jugador: null },
+    { index: 24, lado: "right", top: 45.0, estado: "libre", jugador: null },
+    { index: 25, lado: "right", top: 50.4, estado: "libre", jugador: null },
+    { index: 26, lado: "right", top: 55.5, estado: "libre", jugador: null },
+    { index: 27, lado: "right", top: 60.8, estado: "libre", jugador: null },
+    { index: 28, lado: "right", top: 66.0, estado: "libre", jugador: null },
+    { index: 29, lado: "right", top: 71.2, estado: "libre", jugador: null },
+    { index: 30, lado: "right", top: 76.4, estado: "libre", jugador: null },
+    { index: 31, lado: "right", top: 81.6, estado: "libre", jugador: null },
+    { index: 32, lado: "right", top: 86.8, estado: "libre", jugador: null }
+];

@@ -35,6 +35,7 @@
 
     <!-- JS -->
     <script defer src="../js/datosjugadores.js"></script>
+    <script defer src="../js/torneo.js"></script>
 
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -90,18 +91,63 @@
                             <option value="4ta">4ta</option>
                             <option value="5ta">5ta</option>
                             <option value="6ta">6ta</option>
-                            </select>
+                        </select>
                         <input type="text" id="nombre" placeholder="Nombre" required>
                         <input type="text" id="apellido" placeholder="Apellido" required>
                         <input type="number" id="edad" placeholder="Edad" required>
-                        <input type="text" id="etapa" placeholder="Mejor etapa">
                         <input type="contacto" id="contacto" placeholder="Contacto">
                         <input type="file" id="foto" accept="image/*">
                         <button type="submit">Guardar</button>
                     </form>
+                    <br>
+                    <!--                     <button id="btnBorrarTorneo" class="btn btn-danger">
+                        🗑️ Borrar torneo
+                    </button> -->
                 </div>
             </div>
         </div>
+        <br>
+        <!--         <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <form id="formTorneo">
+                        <select id="torneo" required>
+                            <option value="" disabled selected>Selecciona un Torneo</option>
+                            <option value="Torneo de 2da">Torneo de 2da</option>
+                            <option value="Torneo de 3era">Torneo de 3era</option>
+                            <option value="Torneo de 4ta">Torneo de 4ta</option>
+                            <option value="Torneo de 5ta">Torneo de 5ta</option>
+                            <option value="Torneo de 6ta">Torneo de 6ta</option>
+                            <option value="Torneo dobles Masc">Torneo dobles Masc</option>
+                            <option value="Torneo dobles Fem">Torneo dobles Fem</option>
+                            <option value="Torneo dobles Mix">Torneo dobles Mix</option>
+                            <option value="Torneo Americano">Torneo Americano</option>
+                        </select>
+
+                        <input type="number" id="cantidadJugadores" placeholder="Cantidad de jugadores" min="1" max="32"
+                            required>
+
+
+
+
+                        <!-- SECCIÓN QUE SE HABILITA -->
+        <!--                         <div class="container mt-4 d-none" id="seccionSeleccionJugadores">
+
+                            <h3 id="tituloTorneo"></h3>
+
+                            <p id="contadorSeleccion">Seleccionados: 0 / 0</p>
+
+                            <div class="row" id="listaJugadoresTorneo"></div>
+
+                            <button id="btnContinuarTorneo" class="btn btn-primary mt-3" disabled>
+                                Continuar al sorteo
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> -->
     </main>
     <!--Pie de pagina hecho con Flexbox-->
     <footer>
@@ -130,6 +176,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- SWEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

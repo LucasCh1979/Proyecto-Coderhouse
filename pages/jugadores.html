@@ -92,19 +92,16 @@
                     <option value="4ta">4ta</option>
                     <option value="5ta">5ta</option>
                     <option value="6ta">6ta</option>
+                    <option value="">Todos los jugadores\as</option>
                 </select>
             </div>
-            <section class="container" id="fotos--jugadores">
-                <div class="row" id="resultados">    <!-- Aquí se mostrarán las tarjetas de jugador -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                ...
-                            </div>
-                        </div>
+
+            <div class="fondo--jugadores">
+                <div class="container mt-4 ">
+                    <div class="row tarjetas--jugadores" id="contenedorJugadores">
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
 
@@ -127,7 +124,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,      // anima solo una vez
+            duration: 800,   // duración base
+            easing: "ease-in-out"
+        });
     </script>
 
     <!-- BOOTSTRAP-->
@@ -136,6 +137,8 @@
         crossorigin="anonymous"></script>
 
 
+    <!-- SWEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

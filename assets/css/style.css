@@ -564,6 +564,11 @@ main .fondo--jugadores .comentario {
 }
 main .fondo--jugadores .tarjetas--jugadores .card {
   padding: 15px;
+  width: 18rem;
+  background: linear-gradient(-45deg, hsl(34, 82%, 63%), hsl(34, 23.8095238095%, 89.5%), hsl(34, 82%, 63%), hsl(34, 23.8095238095%, 89.5%));
+}
+main .fondo--jugadores .tarjetas--jugadores .card img {
+  width: 88%;
 }
 
 /*Para que la pagina de Jugadores se vea del mismo ancho en desktop que las demas paginas */
@@ -711,3 +716,5 @@ main .grilla div:last-child:after {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
